@@ -22,3 +22,13 @@ export function getAllArticles(){
     }
   })
 }
+
+export function getRecentPosts(){
+  return articles.slice(0, 3).map(x => {
+    return {
+      id: `/article/${x.id}`,
+      title: x.title,
+      description: x.html.substr(0, 200)
+    }
+  })
+}

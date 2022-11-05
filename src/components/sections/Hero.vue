@@ -4,7 +4,7 @@
     class="relative w-full flex items-center justify-start text-left bg-cover bg-center"
     style="
       height: 48rem;
-      background-image: url('/hero_background.jpg');
+      background-image: url('/portfolio/hero_background.jpg');
     "
   >
     <div class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>

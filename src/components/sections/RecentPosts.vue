@@ -14,19 +14,19 @@
           <div
             v-for="(post, idx) in posts"
             :key="idx"
-            class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:border-gray-700"
+            class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md"
           >
-            <a :href="post.link">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+            <router-link :to="post.id">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 line-clamp-2">
                 {{ post.title }}
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-4">
-              {{ strippedHtml(post.limited_content) }}
+            </router-link>
+            <p class="mb-3 font-normal text-gray-700 line-clamp-4" v-html="post.description">
+              
             </p>
-            <a
-              :href="post.link"
-              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            <router-link
+              :to="post.id"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               Read more
               <svg
@@ -41,22 +41,14 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  props: ['posts'],
-  methods: {
-    strippedHtml(html) {
-      let regex = /(<([^>]+)>)/gi;
-      return html.replace(regex, '');
-    }
-  }
-};
+<script setup>
+import { getRecentPosts } from '../../composeables/articles.js'
+const posts = getRecentPosts();
 </script>
