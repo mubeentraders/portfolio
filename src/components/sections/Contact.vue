@@ -1,8 +1,8 @@
 <template>
-  <div id="contact" class="bg-gray-200">
+  <div id="contact" v-motion-slide-visible-once-bottom class="bg-gray-200">
     <div class="container mx-auto py-16">
       <div class="lg:flex">
-        <div class="xl:w-2/5 lg:w-2/5 bg-indigo-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
+        <div class="xl:w-2/5 lg:w-2/5 bg-gradient-to-br from-indigo-800 via-indigo-700 to-blue-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
           <div class="xl:w-5/6 xl:px-0 px-8 mx-auto">
             <h1 class="xl:text-4xl text-3xl pb-4 text-white font-bold">Get in touch</h1>
             <p class="text-xl text-white pb-8 leading-relaxed font-normal lg:pr-4">
@@ -52,7 +52,7 @@
                   <polyline points="3 7 12 13 21 7" />
                 </svg>
               </div>
-              <p class="pl-4 text-white text-base">mubeen@traders.com</p>
+              <p class="pl-4 text-white text-base">mubeenprinters008@gmail.com</p>
             </div>
             <p class="text-lg text-white pt-10 tracking-wide">
               Main College Road
@@ -129,7 +129,7 @@
                 v-if="!requestSuccessful"
                 type="submit"
                 :class="{'cursor-not-allowed pointer-events-none' : busy }"
-                class="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6"
+                class="focus:outline-none bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6"
               >
                 Send Message
               </button>

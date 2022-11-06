@@ -1,5 +1,5 @@
 <template>
-  <div id="team" class="bg-gray-100 pb-16">
+  <div id="team" v-motion-slide-visible-once-bottom class="bg-gray-100 pb-16">
     <div class="container flex justify-center mx-auto pt-16">
       <div>
         <p class="text-gray-500 text-lg text-center font-normal pb-3">BUILDING TEAM</p>

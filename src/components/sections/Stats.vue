@@ -2,7 +2,7 @@
   <div class="bg-gray-100" id="stats">
     <div class="">
       <div class="pb-20">
-        <div class="mx-auto bg-gradient-to-l from-indigo-600 to-indigo-700 h-96">
+        <div class="mx-auto bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-700 hover:bg-indigo-500 h-96">
           <div class="mx-auto container w-full flex flex-col justify-center items-center">
             <div class="flex justify-center items-center flex-col">
               <div class="mt-20">

@@ -1,5 +1,5 @@
 <template>
-  <div id="testimonials" class="bg-white">
+  <div id="testimonials" v-motion-slide-visible-once-bottom class="bg-white">
     <div class="lg:px-20 md:px-6 px-4 py-12">
       <div class="flex flex-col items-center justify-center">
         <h1 class="lg:text-5xl text-3xl font-bold text-center text-gray-800">Listen From Our Clients</h1>

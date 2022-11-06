@@ -1,6 +1,7 @@
 <template>
   <div
     id="what_we_do"
+    v-motion-fade
     class="relative w-full flex items-center justify-start text-left bg-cover bg-center"
     style="
       height: 48rem;
@@ -24,8 +25,8 @@
         <div class="mt-5 sm:mt-8 sm:flex justify-start">
           <div class="rounded-md shadow">
             <a
-              href="#"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+              href="#services"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-700 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               See All Our Services
               <ArrowNarrowRightIcon class="w-5 h-5 ml-2" />

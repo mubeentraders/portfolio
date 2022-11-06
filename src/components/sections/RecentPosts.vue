@@ -1,5 +1,5 @@
 <template>
-  <div id="posts" class="bg-white">
+  <div id="posts" v-motion-slide-visible-once-bottom class="bg-white">
     <section class="max-w-8xl mx-auto container bg-white py-16">
       <div>
         <div class="flex items-center flex-col px-4">
@@ -26,7 +26,7 @@
             </p>
             <router-link
               :to="post.id"
-              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               Read more
               <svg

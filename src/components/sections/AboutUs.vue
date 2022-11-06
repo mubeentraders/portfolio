@@ -1,5 +1,5 @@
 <template>
-  <div id="#about_us" class="overflow-y-hidden bg-gray-100">
+  <div id="#about_us" v-motion-slide-visible-once-bottom class="overflow-y-hidden bg-gray-100">
     <div class="2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
       <p class="font-semibold leading-3 text-indigo-700 hover:text-indigo-800 cursor-pointer pb-2 text-left">
         About Us
@@ -19,23 +19,23 @@
         <div class="w-full lg:w-6/12">
           <img
             class="lg:block hidden w-full"
-            src="/wires.jpg"
+            src="/hp-printers.jpg"
             alt="people discussing on board"
           />
           <img
             class="lg:hidden sm:block hidden w-full"
-            src="/wires.jpg"
+            src="/hp-printers.jpg"
             alt="people discussing on board"
           />
           <img
             class="sm:hidden block w-full"
-            src="/wires.jpg"
+            src="/hp-printers.jpg"
             alt="people discussing on board"
           />
         </div>
       </div>
 
-      <div class="relative mt-24">
+      <div v-motion-slide-visible-once-bottom class="relative mt-24">
         <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4">
           <div class="z-20 w-12 rounded-full bg-gray-100 flex justify-center items-center">
             <ClockIcon class=" w-12 h-12 text-gray-800" />
@@ -46,7 +46,7 @@
         </div>
         <hr class="z-10 absolute top-2/4 w-full bg-gray-200" />
       </div>
-      <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4">
+      <div v-motion-slide-visible-once-bottom class="grid sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4">
         <div>
           <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 mt-6 text-left">
             24/7 Support
@@ -80,7 +80,7 @@
         </div>
       </div> -->
 
-      <div class="container mx-auto pt-16">
+      <div v-motion-slide-visible-once-bottom class="container mx-auto pt-16">
         <!-- <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16">
           <h1 class="xl:text-5xl md:text-3xl text-xl text-center text-gray-800 font-extrabold mb-5 pt-4">
             Partnerships with Coveted Brands

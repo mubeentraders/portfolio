@@ -1,11 +1,11 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="hidden md:block sticky top-0 z-100 bg-gradient-to-r from-indigo-700 via-indigo-600 to-indigo-500 py-2 px-4">
+  <div class="hidden md:block sticky top-0 z-100 bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-800 py-2 px-4">
     <div class="flex items-center justify-between mx-auto max-w-7xl px-4 sm:px-6">
       <div class="flex items-center space-x-8">
-        <a href="mailto:mubeentraders@gmail.com" class="flex items-center space-x-2 text-gray-100">
+        <a href="mailto:mubeenprinters008@gmail.com" class="flex items-center space-x-2 text-gray-100">
           <MailIcon class="flex-shrink-0 h-6 w-6" aria-hidden="true" />
-          <p class="text-base font-medium">mubeentraders@gmail.com</p>
+          <p class="text-base font-medium">mubeenprinters008@gmail.com</p>
         </a>
         <div class="flex items-center space-x-2 text-gray-100">
           <LocationMarkerIcon class="flex-shrink-0 h-6 w-6" aria-hidden="true" />
@@ -146,7 +146,7 @@
           </PopoverGroup>
           <a
             href="/#contact"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-indigo-700 via-indigo-600 to-indigo-500 hover:bg-indigo-700"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-indigo-800 via-indigo-700 to-blue-700 hover:bg-indigo-700"
           >
             Get A Quote
           </a>
@@ -172,30 +172,30 @@ const solutions = [
   {
     name: 'Networking',
     description: "Provide secure and sound networking protocol over local and remote networks.",
-    href: '#',
+    href: '#services',
     icon: GlobeAltIcon
   },
   {
     name: 'CCTV Installation',
     description: "Get best quality and highly maintainable CCTV installation for your peace of mind.",
-    href: '#',
+    href: '#services',
     icon: VideoCameraIcon
   },
   {
     name: 'Recovery & Maintenance',
     description: 'Loss your data? Get it recovered by professionally trained staff.',
-    href: '#',
+    href: '#services',
     icon: DatabaseIcon
   },
   {
     name: 'Troubleshooting',
     description: 'Help identify what is wrong with your equipment. Easily and quickly',
-    href: '#',
+    href: '#services',
     icon: PrinterIcon
   }
 ];
 const callsToAction = [
-  { name: 'Get in Touch', href: '#', icon: MailIcon },
+  { name: 'Get in Touch', href: '#contact', icon: MailIcon },
   { name: '+92-321-5667476', href: '#', icon: PhoneIcon }
 ];
 const recentPosts = getAllArticles();
